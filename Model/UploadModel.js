@@ -1,9 +1,9 @@
 const mongoose = require("mongoose");
-const { type } = require("os");
-const { StringDecoder } = require("string_decoder");
 
 const UploadSchema = mongoose.Schema({
   file: { type: String, required: true },
+  techimages: [{ type: String }],
+  resume: { type: String },
   title: { type: String, required: true },
   sentence: { type: String, required: true },
   about: { type: String, required: true },
